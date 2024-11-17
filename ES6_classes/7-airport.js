@@ -11,6 +11,6 @@ export default class Currency {
   }
 
   toString() {
-    return this._code;
+    return `[object ${this._code}]`;
   }
 }
