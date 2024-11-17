@@ -26,19 +26,19 @@ export default class HolbertonCourse {
   set name(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
+    }
+    this._name = value;
   }
-  return this._name = value;
- }
 
- get length() {
+  get length() {
     return this._length;
-   }
-  
-   set length(value) {
-    if (typeof value !== 'number' ) {
+  }
+
+  set length(value) {
+    if (typeof value !== 'number') {
       throw new TypeError('Lenght must be a number');
     }
-    return this._length = value;
+    this._length = value;
    }
 
    get students() {
@@ -52,6 +52,6 @@ export default class HolbertonCourse {
     if (value.every((student) => typeof student !== 'string')) {
       throw TypeError('Students must be an array of strings');
     }
-    return this._students = value;
+    this._students = value;
    }
 }
