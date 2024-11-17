@@ -12,13 +12,6 @@ import Currency from './3-currency.js';
     return this._amount;
   }
 
-  set amount(value) {
-    if (typeof value !== 'number') {
-      throw new TypeError('Amount must be a number');
-    }
-    this._amount = value;
-  }
-
   get currency() {
     return this._currency;
   }
