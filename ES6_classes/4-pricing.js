@@ -27,13 +27,6 @@ import Currency from './3-currency.js';
     return this._currency;
   }
 
-  set currency(value) {
-    if (typeof value !== 'string') {
-      throw new TypeError('Amount must be a string');
-    }
-    this._currency = value;
-  }
-
   displayFullCurrency() {
     return `${this.currency.name} (${this.currency.code})`;
   }
