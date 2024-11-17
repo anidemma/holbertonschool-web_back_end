@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable-next-line import/extensions */
 import Currency from './3-currency.js';
   export default class Pricing {
     constructor(amount, currency) {
