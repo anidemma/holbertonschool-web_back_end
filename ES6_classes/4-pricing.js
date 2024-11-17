@@ -5,10 +5,6 @@ import Currency from './3-currency.js';
         throw new TypeError('Amount must be a number');
       }
       this._amount = amount;
-
-      if (typeof currency !== 'string') {
-        throw new TypeError('Currency must be a string');
-      }
       this._currency = currency;
     }
 
@@ -39,4 +35,3 @@ import Currency from './3-currency.js';
     return amount * conversionRate;
   }
 }
-  
