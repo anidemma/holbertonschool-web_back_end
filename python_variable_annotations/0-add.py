@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-""" add"""
+""" Basic annotations - add"""
 
 
 def add(a: float, b: float) -> float:
-    """ add"""
+    """ Basic annotations - add"""
     return a + b
