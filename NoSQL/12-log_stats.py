@@ -2,6 +2,7 @@
 """Log stats"""
 from pymongo import MongoClient
 
+
 methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
 
 
